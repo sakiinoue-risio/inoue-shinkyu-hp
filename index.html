@@ -146,27 +146,17 @@ a { color: #1a6b54; }
 .header-tel .hours-note { font-size: 14px; color: #666; }
 
 /* ====== ファーストビュー（写真） ====== */
-.hero {
-  background-image: url("images/hero.jpg");
-  background-size: cover;
-  background-position: center;
+.hero { padding: 20px 0; }
+.hero-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
-.hero-overlay {
-  background: linear-gradient(180deg, rgba(26,71,52,0.25) 0%, rgba(26,71,52,0.75) 100%);
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-}
-.hero-content { color: #fff; padding: 40px 0; }
-.hero-catch {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-.hero-sub {
-  font-size: 18px;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+.hero-photos img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* ====== 目次ボタン ====== */
@@ -434,9 +424,8 @@ section { padding: 56px 0; }
   .hours-table .open, .hours-table .closed { font-size: 17px; }
   .treat-grid { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: 1fr; }
-  .hero-overlay { min-height: 220px; }
-  .hero-catch { font-size: 22px; }
-  .hero-sub { font-size: 16px; }
+  .hero-photos { grid-template-columns: 1fr; }
+  .hero-photos img { height: 200px; }
   .doctor .photo { width: 100%; }
   .call-banner a { font-size: 34px; }
   .map-wrap iframe { height: 320px; }
@@ -466,11 +455,9 @@ section { padding: 56px 0; }
 
 <!-- ファーストビュー：院内写真 -->
 <div class="hero">
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <p class="hero-catch">平成16年開業<br>地域に根づく、嵐山・嵯峨の鍼灸接骨院</p>
-      <p class="hero-sub">肩こり・腰痛・けがの施術から鍼灸まで。健康保険取扱・予約不要でお越しいただけます。</p>
-    </div>
+  <div class="container hero-photos">
+    <img src="images/photo-reception.jpg" alt="受付カウンター" width="700" height="280">
+    <img src="images/photo-treatment.jpg" alt="施術室" width="700" height="280">
   </div>
 </div>
 
