@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>井上鍼灸接骨院｜嵐山・嵯峨の接骨院・鍼灸院（嵯峨嵐山駅徒歩4分）</title>
+<meta name="description" content="京都市右京区・嵐山の井上鍼灸接骨院。JR嵯峨嵐山駅徒歩4分・嵐電嵯峨駅すぐ。肩こり・腰痛・捻挫・打撲の施術、鍼灸に対応。健康保険取扱・予約不要。平成16年開業、地域のかかりつけ接骨院です。">
+<!--
+■ 公開前チェックリスト（必ず対応）
+1. 電話番号：「075-XXX-XXXX」を実番号に一括置換（5箇所）し、
+   各電話表示の <a> タグに href="tel:075XXXXXXX" を追加する（現在は誤発信防止のため未設定）
+2. 下のJSON-LDに "telephone": "+81-75-XXX-XXXX" の行を追加して実番号を入れる
+3. 料金表の「ここに料金が入ります」を実料金に差し替え
+4. お知らせの仮文面を実際の内容に差し替え
+5. 写真3枚（外観・待合室・施術室）と院長写真を差し替え（imgタグには alt を必ず付ける）
+6. 「混みやすい時間帯の目安」を院長に確認して記入
+7. 公開URL確定後：OGP（og:title / og:image）・canonical・favicon を追加し、
+   下のJSON-LD（3ブロック）に "url" と "image" を追加する
+   ※imageはLocalBusinessリッチリザルトの必須項目。@idも "#clinic" → "https://ドメイン/#clinic" に絶対化する
+8. geo座標（35.019048, 135.679652）は地図埋め込みURL由来の暫定値。
+   Googleマップで自院ピンを右クリックして正確な座標を確認し、差し替える
+9. Googleビジネスプロフィール（GBP）のオーナー確認を行い、
+   院名・住所・電話（NAP）をGBP・本ページ・JSON-LDで完全一致させる（ハイフン位置含む）
+10. 料金確定後、JSON-LDに "priceRange" を追加する
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "#clinic",
+  "name": "井上鍼灸接骨院",
+  "description": "京都市右京区・嵐山（JR嵯峨嵐山駅徒歩4分）の鍼灸接骨院。柔道整復師・鍼灸師の院長が、打撲・捻挫などのけがの施術と鍼灸を行う。健康保険取扱・予約不要。平成16年（2004年）開業。",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "616-8374",
+    "addressRegion": "京都府",
+    "addressLocality": "京都市右京区",
+    "streetAddress": "嵯峨天龍寺若宮町31-4"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.019048,
+    "longitude": 135.679652
+  },
+  "hasMap": "https://maps.app.goo.gl/vi7sVXjbBT7Uru9N6",
+  "areaServed": ["京都市右京区", "嵯峨", "嵐山"],
+  "foundingDate": "2004",
+  "founder": {"@id": "#director"},
+  "knowsAbout": ["鍼灸", "柔道整復", "接骨", "手技療法", "電気療法"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "08:30", "closes": "12:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "15:00", "closes": "18:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Saturday"], "opens": "08:30", "closes": "12:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "https://schema.org/PublicHolidays", "opens": "08:30", "closes": "12:00"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "#director",
+  "name": "井上 章",
+  "jobTitle": "院長",
+  "worksFor": {"@id": "#clinic"},
+  "hasCredential": [
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "国家資格", "name": "柔道整復師（1985年取得）", "recognizedBy": {"@type": "GovernmentOrganization", "name": "厚生労働省"}},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "国家資格", "name": "鍼灸師（はり師・きゅう師）", "recognizedBy": {"@type": "GovernmentOrganization", "name": "厚生労働省"}}
+  ],
+  "knowsAbout": ["柔道整復", "鍼灸", "手技療法"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "about": {"@id": "#clinic"},
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "予約は必要ですか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "予約は不要です。受付順にご案内しますので、受付時間内に直接お越しください。"}
+    },
+    {
+      "@type": "Question",
+      "name": "健康保険は使えますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "打撲・捻挫・挫傷など急性のけがの施術には健康保険が使えます。肩こりや慢性的な症状の施術は保険外（自費）です。詳しくは受付でご確認ください。"}
+    },
+    {
+      "@type": "Question",
+      "name": "駐車場はありますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅からすぐです。"}
+    },
+    {
+      "@type": "Question",
+      "name": "初めて行くときは何を持っていけばよいですか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "健康保険証またはマイナンバーカード、各種医療証（お持ちの方）をお持ちください。動きやすい服装でお越しいただくと施術がスムーズです。"}
+    },
+    {
+      "@type": "Question",
+      "name": "混み具合を事前に確認できますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "当日の空き状況はお電話で確認できます。混み具合によりお待ちいただく場合があります。"}
+    }
+  ]
+}
+</script>
+<style>
+/* ====== 基本設定（高齢の方にも読みやすく） ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 19px;
+  line-height: 1.9;
+  color: #333;
+  background: #fff;
+}
+img { max-width: 100%; display: block; }
+a { color: #1a6b54; }
+
+.container { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+/* ====== ヘッダー ====== */
+.header {
+  border-bottom: 4px solid #1a6b54;
+  padding: 24px 0;
+}
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-name { line-height: 1.4; }
+.site-name .small { font-size: 15px; color: #666; display: block; }
+.site-name .name { font-size: 30px; font-weight: 700; color: #1a4734; }
+.header-tel { text-align: right; line-height: 1.5; }
+.header-tel .label { font-size: 15px; color: #666; }
+.header-tel a {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a6b54;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.header-tel .hours-note { font-size: 14px; color: #666; }
+
+/* ====== 目次ボタン ====== */
+.quick-nav { background: #f2f7f5; padding: 20px 0; }
+.quick-nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.quick-nav a {
+  display: block;
+  background: #fff;
+  border: 2px solid #1a6b54;
+  border-radius: 8px;
+  text-align: center;
+  padding: 14px 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a6b54;
+  text-decoration: none;
+}
+.quick-nav a:hover,
+.quick-nav a:focus-visible { background: #1a6b54; color: #fff; outline: 3px solid #1a4734; }
+
+/* ====== 見出し ====== */
+section { padding: 56px 0; }
+.bg-alt { background: #f8faf9; }
+.visually-hidden { position: absolute; left: -9999px; }
+.section-title {
+  font-size: 30px;
+  color: #1a4734;
+  border-left: 8px solid #1a6b54;
+  padding-left: 16px;
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+/* ====== 紹介文（Answer-First） ====== */
+.lead-intro { padding: 28px 0 0; }
+.lead-intro p { font-size: 19px; }
+
+/* ====== よくあるご質問 ====== */
+.faq-item {
+  background: #fff;
+  border: 1px solid #cfe0d9;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+}
+.faq-item h3 { font-size: 20px; color: #1a4734; margin-bottom: 8px; }
+.faq-item h3::before { content: "Q．"; color: #1a6b54; }
+.faq-item p::before { content: "A．"; color: #b53c2a; font-weight: 700; }
+
+/* ====== お知らせ ====== */
+.news-list { list-style: none; }
+.news-list li {
+  border-bottom: 1px solid #ddd;
+  padding: 14px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+}
+.news-list .date { color: #666; font-size: 17px; white-space: nowrap; }
+.news-list .tag {
+  font-size: 16px;
+  background: #1a6b54;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 10px;
+  white-space: nowrap;
+}
+.news-list .tag.kyushin { background: #b53c2a; }
+
+/* ====== 受付時間表 ====== */
+.table-scroll { overflow-x: auto; }
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 18px;
+}
+.hours-table th, .hours-table td {
+  border: 1px solid #bbb;
+  text-align: center;
+  padding: 14px 4px;
+}
+.hours-table thead th { background: #1a6b54; color: #fff; font-size: 19px; }
+.hours-table thead th.sun { background: #b53c2a; }
+.hours-table tbody th { background: #eef4f1; font-weight: 700; white-space: nowrap; padding: 14px 10px; }
+.hours-table .open { color: #1a6b54; font-weight: 700; font-size: 22px; }
+.hours-table .closed { color: #b53c2a; font-weight: 700; font-size: 22px; }
+.hours-time { font-size: 18px; margin-top: 12px; }
+.hours-time strong { font-size: 20px; }
+.hours-box {
+  background: #fff;
+  border: 2px solid #1a6b54;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 24px;
+  font-size: 18px;
+}
+.hours-box .head { font-weight: 700; color: #1a4734; font-size: 20px; margin-bottom: 6px; }
+.closed-note {
+  margin-top: 16px;
+  font-size: 19px;
+}
+.closed-note .red { color: #b53c2a; font-weight: 700; }
+
+/* ====== 表（料金など） ====== */
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 18px;
+}
+.simple-table th, .simple-table td {
+  border: 1px solid #bbb;
+  padding: 14px 16px;
+  text-align: left;
+}
+.simple-table th { background: #eef4f1; white-space: nowrap; width: 36%; }
+.table-note { font-size: 16px; color: #666; margin-top: 12px; }
+
+/* ====== 施術内容 ====== */
+.treat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.treat-card {
+  background: #fff;
+  border: 1px solid #cfe0d9;
+  border-radius: 8px;
+  padding: 20px 22px;
+}
+.treat-card h3 { font-size: 21px; color: #1a4734; margin-bottom: 6px; }
+.treat-card p { font-size: 17px; }
+
+/* ====== 先生紹介 ====== */
+.doctor { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+.doctor .photo {
+  width: 220px;
+  min-height: 260px;
+  background: #e4ece8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8377;
+  font-size: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.doctor .text { flex: 1; min-width: 280px; }
+.doctor .name { font-size: 24px; font-weight: 700; color: #1a4734; margin-bottom: 12px; }
+
+/* ====== 院内写真 ====== */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.photo-grid figure { margin: 0; }
+.photo-grid .ph {
+  background: #e4ece8;
+  border-radius: 8px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8377;
+  font-size: 16px;
+}
+.photo-grid figcaption { text-align: center; font-size: 17px; margin-top: 6px; }
+
+/* ====== アクセス ====== */
+.access-table { margin-bottom: 28px; }
+.map-wrap { border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+.map-wrap iframe { width: 100%; height: 420px; border: 0; display: block; }
+.map-link { display: inline-block; margin-top: 12px; font-size: 18px; font-weight: 700; }
+
+/* ====== 予約・初めての方 ====== */
+.first-box {
+  background: #fff;
+  border: 2px solid #1a6b54;
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+}
+.first-box h3 { font-size: 22px; color: #1a4734; margin-bottom: 10px; }
+.first-box ul { padding-left: 26px; }
+.first-box li { margin-bottom: 6px; }
+
+/* ====== 電話案内（大） ====== */
+.call-banner {
+  background: #1a6b54;
+  color: #fff;
+  text-align: center;
+  padding: 44px 20px;
+}
+.call-banner .lead { font-size: 21px; margin-bottom: 10px; }
+.call-banner a {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+.call-banner .note { font-size: 17px; margin-top: 10px; opacity: 0.9; }
+
+/* ====== フッター ====== */
+.footer {
+  background: #1a4734;
+  color: #fff;
+  padding: 36px 0 90px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 2;
+}
+.footer .disclaimer {
+  font-size: 14px;
+  opacity: 0.75;
+  max-width: 700px;
+  margin: 16px auto 0;
+  text-align: left;
+}
+
+/* ====== スマホ用 固定電話ボタン ====== */
+.fixed-call {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: #b53c2a;
+  text-align: center;
+  padding: 12px;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+}
+.fixed-call a {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+/* ====== スマホ対応 ====== */
+@media (max-width: 640px) {
+  body { font-size: 18px; }
+  .header .container { justify-content: center; text-align: center; }
+  .header-tel { text-align: center; }
+  .quick-nav ul { grid-template-columns: repeat(2, 1fr); }
+  .section-title { font-size: 26px; }
+  .hours-table { font-size: 15px; }
+  .hours-table thead th { font-size: 16px; }
+  .hours-table th, .hours-table td { padding: 10px 2px; }
+  .hours-table tbody th { padding: 10px 6px; }
+  .hours-table .open, .hours-table .closed { font-size: 17px; }
+  .treat-grid { grid-template-columns: 1fr; }
+  .photo-grid { grid-template-columns: 1fr; }
+  .doctor .photo { width: 100%; }
+  .call-banner a { font-size: 34px; }
+  .map-wrap iframe { height: 320px; }
+}
+@media (min-width: 641px) {
+  .fixed-call { display: none; }
+  .footer { padding-bottom: 36px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー：院名と電話番号 -->
+<header class="header">
+  <div class="container">
+    <div class="site-name">
+      <span class="small">京都・JR嵯峨嵐山駅 徒歩4分の鍼灸接骨院</span>
+      <h1 class="name">井上鍼灸接骨院</h1>
+    </div>
+    <div class="header-tel">
+      <div class="label">お問い合わせ</div>
+      <a>075-XXX-XXXX</a>
+      <div class="hours-note">お電話は受付時間内にお願いします</div>
+    </div>
+  </div>
+</header>
+
+<!-- 目次（知りたい情報へすぐ飛べる） -->
+<nav class="quick-nav" aria-label="ページ内メニュー">
+  <div class="container">
+    <ul>
+      <li><a href="#hours">受付時間</a></li>
+      <li><a href="#news">お知らせ</a></li>
+      <li><a href="#price">料金</a></li>
+      <li><a href="#access">地図・駐車場</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- 紹介文 -->
+<div class="lead-intro">
+  <div class="container">
+    <p>
+      井上鍼灸接骨院は、京都市右京区・嵐山エリア（JR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅すぐ）にある鍼灸接骨院です。
+      平成16年（2004年）の開業以来、柔道整復師・鍼灸師の院長が、打撲・捻挫などのけがの施術や鍼灸を行っています。
+      健康保険取扱（急性のけが）・予約不要です。
+    </p>
+  </div>
+</div>
+
+<!-- お知らせ -->
+<section id="news">
+  <div class="container">
+    <h2 class="section-title">お知らせ</h2>
+    <ul class="news-list">
+      <li>
+        <span class="date">2026年6月10日</span>
+        <span class="tag kyushin">臨時休業</span>
+        <span>（ここに臨時休業のお知らせが入ります）</span>
+      </li>
+      <li>
+        <span class="date">2026年6月1日</span>
+        <span class="tag">お知らせ</span>
+        <span>ホームページを開設しました。</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 受付時間 -->
+<section id="hours" class="bg-alt">
+  <div class="container">
+    <h2 class="section-title">受付時間</h2>
+    <div class="table-scroll">
+    <table class="hours-table">
+      <caption class="visually-hidden">曜日ごとの受付時間。丸印は受付あり、横棒はお休みです。</caption>
+      <thead>
+        <tr>
+          <th scope="col">時間</th>
+          <th scope="col">月</th>
+          <th scope="col">火</th>
+          <th scope="col">水</th>
+          <th scope="col">木</th>
+          <th scope="col">金</th>
+          <th scope="col">土</th>
+          <th scope="col" class="sun">日</th>
+          <th scope="col">祝</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">午前<br>8:30〜12:00</th>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="closed" role="img" aria-label="お休み">－</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+        </tr>
+        <tr>
+          <th scope="row">午後<br>15:00〜18:30</th>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="closed" role="img" aria-label="お休み">－</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="open" role="img" aria-label="受付あり">○</span></td>
+          <td><span class="closed" role="img" aria-label="お休み">－</span></td>
+          <td><span class="closed" role="img" aria-label="お休み">－</span></td>
+          <td><span class="closed" role="img" aria-label="お休み">－</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="closed-note">
+      ○＝受付あり　－＝お休み<br>
+      <span class="red">水曜・土曜・祝日は午前のみ、日曜日はお休みです。</span>
+    </p>
+    <div class="hours-box">
+      <div class="head">ご来院の目安時間</div>
+      午前は <strong>11時30分まで</strong>、午後は <strong>18時まで</strong> にお越しください。
+    </div>
+    <div class="hours-box">
+      <div class="head">混み具合の目安</div>
+      混みやすい時間帯：（ここに目安が入ります。例：午前の開院直後）<br>
+      比較的ゆったりの時間帯：（ここに目安が入ります）<br>
+      混み具合により、お待ちいただく場合があります。当日の空き状況はお電話でお気軽にお尋ねください。
+    </div>
+  </div>
+</section>
+
+<!-- 予約・初めての方へ -->
+<section id="first">
+  <div class="container">
+    <h2 class="section-title">ご予約・初めての方へ</h2>
+    <div class="first-box">
+      <h3>予約は不要です</h3>
+      <p>
+        受付順にご案内いたしますので、受付時間内に直接お越しください。<br>
+        混み具合を確認されたい方は、お電話いただければお伝えします。
+      </p>
+    </div>
+    <div class="first-box">
+      <h3>お持ちいただくもの</h3>
+      <ul>
+        <li>健康保険証 または マイナンバーカード</li>
+        <li>各種医療証（お持ちの方）</li>
+        <li>動きやすい服装でお越しください</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 施術内容 -->
+<section id="treatments" class="bg-alt">
+  <div class="container">
+    <h2 class="section-title">施術内容</h2>
+    <p style="margin-bottom: 24px;">
+      鍼灸と接骨の両方の視点から、おひとりおひとりのお身体に合わせて施術いたします。
+    </p>
+    <div class="treat-grid">
+      <div class="treat-card">
+        <h3>鍼灸（しんきゅう）</h3>
+        <p>髪の毛ほどの細い鍼と温かなお灸で、肩こり・腰痛・冷えなど、お身体のバランスを整えます。</p>
+      </div>
+      <div class="treat-card">
+        <h3>接骨・整骨</h3>
+        <p>打撲・捻挫・挫傷など、日常やお仕事中のお怪我に。柔道整復師による手技で対応いたします。</p>
+      </div>
+      <div class="treat-card">
+        <h3>手技療法</h3>
+        <p>肩こり・腰痛・慢性疲労など、繰り返すお悩みに。お身体の状態に合わせて丁寧にほぐします。</p>
+      </div>
+      <div class="treat-card">
+        <h3>電気療法</h3>
+        <p>低周波・干渉波などの機器を用いて、深部の筋肉までやさしくアプローチします。</p>
+      </div>
+      <div class="treat-card">
+        <h3>交通事故のけが</h3>
+        <p>むちうちなど交通事故後のお身体の不調に。自賠責保険のお取り扱いがございます。</p>
+      </div>
+      <div class="treat-card">
+        <h3>スポーツのけが・産前産後ケア</h3>
+        <p>スポーツでの痛みのケアや、妊娠中・産後の腰痛・骨盤まわりのお悩みにも対応しています。</p>
+      </div>
+    </div>
+    <p class="table-note" style="margin-top:16px;">
+      ※健康保険が使えるのは、打撲・捻挫・挫傷など急性のけがの場合です。肩こりや慢性的な症状の施術は保険外（自費）となります。詳しくは受付でご確認ください。
+    </p>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section id="price">
+  <div class="container">
+    <h2 class="section-title">料金</h2>
+    <table class="simple-table">
+      <tbody>
+        <tr>
+          <th scope="row">健康保険を使った施術<br>（打撲・捻挫・挫傷など）</th>
+          <td>保険の種類・負担割合・症状により異なります。<br>受付にてお気軽にお尋ねください。</td>
+        </tr>
+        <tr>
+          <th scope="row">鍼灸施術</th>
+          <td>〇〇〇〇円（ここに料金が入ります）</td>
+        </tr>
+        <tr>
+          <th scope="row">保険外の施術</th>
+          <td>〇〇〇〇円（ここに料金が入ります）</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note">
+      ※健康保険の適用には条件があります。詳しくは受付またはお電話でご確認ください。
+    </p>
+  </div>
+</section>
+
+<!-- 先生の紹介 -->
+<section id="doctor" class="bg-alt">
+  <div class="container">
+    <h2 class="section-title">院長のごあいさつ</h2>
+    <div class="doctor">
+      <div class="photo">院長の写真が<br>入ります</div>
+      <div class="text">
+        <div class="name">院長　井上 章<span style="font-size:17px; font-weight:400;">（柔道整復師・鍼灸師）</span></div>
+        <p>
+          1985年に柔道整復師の資格を取得し、平成16年（2004年）にこの嵯峨嵐山で井上鍼灸接骨院を開業いたしました。
+        </p>
+        <p>
+          長年の経験を生かし、患者さんおひとりおひとりのお身体と向き合い、無理のない手技と鍼灸でお身体を整えるお手伝いをしております。
+        </p>
+        <p>
+          お身体の不調でお悩みの方は、どうぞお気軽にお越しください。
+        </p>
+        <div class="first-box" style="margin-top:20px;">
+          <h3>資格・経歴</h3>
+          <ul>
+            <li>1985年　柔道整復師（国家資格）取得</li>
+            <li>鍼灸師（はり師・きゅう師／国家資格）</li>
+            <li>平成16年（2004年）　井上鍼灸接骨院を嵯峨嵐山に開業</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 院内のご紹介 -->
+<section id="photos">
+  <div class="container">
+    <h2 class="section-title">院内のご紹介</h2>
+    <div class="photo-grid">
+      <figure>
+        <div class="ph">外観の写真が入ります</div>
+        <figcaption>外観</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">待合室の写真が入ります</div>
+        <figcaption>待合室</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">施術室の写真が入ります</div>
+        <figcaption>施術室</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section id="access" class="bg-alt">
+  <div class="container">
+    <h2 class="section-title">地図・アクセス</h2>
+    <table class="simple-table access-table">
+      <tbody>
+        <tr>
+          <th scope="row">住所</th>
+          <td>〒616-8374<br>京都府京都市右京区嵯峨天龍寺若宮町31-4</td>
+        </tr>
+        <tr>
+          <th scope="row">電車でお越しの方</th>
+          <td>JR「嵯峨嵐山駅」より徒歩4分<br>嵐電「嵯峨駅」よりすぐ</td>
+        </tr>
+        <tr>
+          <th scope="row">お車でお越しの方</th>
+          <td>専用駐車場はございません。近隣のコインパーキングをご利用ください。</td>
+        </tr>
+        <tr>
+          <th scope="row">電話番号</th>
+          <td>075-XXX-XXXX</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="map-wrap">
+      <iframe
+        title="井上鍼灸接骨院の地図"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.3576862164944!2d135.67965159561834!3d35.019047569451786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a9f92d914cb9%3A0x9edccfb20295a727!2z5LqV5LiK6Y2854G45o6l6aqo6Zmi!5e0!3m2!1sja!2sjp!4v1778899814566!5m2!1sja!2sjp"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a class="map-link" href="https://maps.app.goo.gl/vi7sVXjbBT7Uru9N6" target="_blank" rel="noopener noreferrer">▶ Googleマップで地図を開く</a>
+  </div>
+</section>
+
+<!-- よくあるご質問 -->
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title">よくあるご質問</h2>
+    <div class="faq-item">
+      <h3>予約は必要ですか？</h3>
+      <p>予約は不要です。受付順にご案内しますので、受付時間内に直接お越しください。</p>
+    </div>
+    <div class="faq-item">
+      <h3>健康保険は使えますか？</h3>
+      <p>打撲・捻挫・挫傷など急性のけがの施術には健康保険が使えます。肩こりや慢性的な症状の施術は保険外（自費）です。詳しくは受付でご確認ください。</p>
+    </div>
+    <div class="faq-item">
+      <h3>駐車場はありますか？</h3>
+      <p>専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅からすぐです。</p>
+    </div>
+    <div class="faq-item">
+      <h3>初めて行くときは何を持っていけばよいですか？</h3>
+      <p>健康保険証またはマイナンバーカード、各種医療証（お持ちの方）をお持ちください。動きやすい服装でお越しいただくと施術がスムーズです。</p>
+    </div>
+    <div class="faq-item">
+      <h3>混み具合を事前に確認できますか？</h3>
+      <p>当日の空き状況はお電話で確認できます。混み具合によりお待ちいただく場合があります。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 電話案内 -->
+<div class="call-banner">
+  <p class="lead">ご不明な点は、お気軽にお電話ください</p>
+  <a>075-XXX-XXXX</a>
+  <p class="note">受付時間：8:30〜12:00／15:00〜18:30（水・土・祝は午前のみ／日曜はお休み）</p>
+</div>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+    <strong style="font-size:20px;">井上鍼灸接骨院</strong><br>
+    院長：井上 章（柔道整復師・鍼灸師）<br>
+    〒616-8374 京都府京都市右京区嵯峨天龍寺若宮町31-4<br>
+    JR嵯峨嵐山駅 徒歩4分／嵐電嵯峨駅すぐ
+    <p class="disclaimer">
+      ※施術の効果には個人差があります。※健康保険の適用には条件があります。詳しくは受付にてお尋ねください。
+    </p>
+    <div style="margin-top:16px; font-size:14px; opacity:0.7;">© 井上鍼灸接骨院</div>
+  </div>
+</footer>
+
+<!-- スマホ用 固定電話ボタン -->
+<div class="fixed-call">
+  <a><span aria-hidden="true">📞</span> 電話をかける：075-XXX-XXXX</a>
+</div>
+
+</body>
+</html>
