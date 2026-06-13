@@ -4,24 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>井上鍼灸接骨院｜嵐山・嵯峨の接骨院・鍼灸院（嵯峨嵐山駅徒歩4分）</title>
-<meta name="description" content="京都市右京区・嵐山の井上鍼灸接骨院。JR嵯峨嵐山駅徒歩4分・嵐電嵯峨駅すぐ。肩こり・腰痛・捻挫・打撲の施術、鍼灸に対応。健康保険取扱・予約不要。平成16年開業、地域のかかりつけ接骨院です。">
+<meta name="description" content="京都市右京区・嵐山の井上鍼灸接骨院。JR嵯峨嵐山駅徒歩4分・嵐電嵯峨駅徒歩6分。肩こり・腰痛・捻挫・打撲の施術、鍼灸に対応。健康保険取扱・予約不要。平成16年開業、地域のかかりつけ接骨院です。">
 <!--
 ■ 公開前チェックリスト（必ず対応）
-1. 電話番号：「075-XXX-XXXX」を実番号に一括置換（5箇所）し、
-   各電話表示の <a> タグに href="tel:075XXXXXXX" を追加する（現在は誤発信防止のため未設定）
-2. 下のJSON-LDに "telephone": "+81-75-XXX-XXXX" の行を追加して実番号を入れる
-3. 料金表の「ここに料金が入ります」を実料金に差し替え
-4. お知らせの仮文面を実際の内容に差し替え
-5. 写真3枚（外観・待合室・施術室）と院長写真を差し替え（imgタグには alt を必ず付ける）
-6. 「混みやすい時間帯の目安」を院長に確認して記入
-7. 公開URL確定後：OGP（og:title / og:image）・canonical・favicon を追加し、
+1. お知らせの仮文面を実際の内容に差し替え
+2. 院長写真を差し替え（imgタグには alt を必ず付ける）。院内写真3枚（施術室・受付・待合室）は反映済み
+3. 「混みやすい時間帯の目安」を院長に確認して記入
+4. 公開URL確定後：OGP（og:title / og:image）・canonical・favicon を追加し、
    下のJSON-LD（3ブロック）に "url" と "image" を追加する
    ※imageはLocalBusinessリッチリザルトの必須項目。@idも "#clinic" → "https://ドメイン/#clinic" に絶対化する
-8. geo座標（35.019048, 135.679652）は地図埋め込みURL由来の暫定値。
+5. geo座標（35.019048, 135.679652）は地図埋め込みURL由来の暫定値。
    Googleマップで自院ピンを右クリックして正確な座標を確認し、差し替える
-9. Googleビジネスプロフィール（GBP）のオーナー確認を行い、
+6. Googleビジネスプロフィール（GBP）のオーナー確認を行い、
    院名・住所・電話（NAP）をGBP・本ページ・JSON-LDで完全一致させる（ハイフン位置含む）
-10. 料金確定後、JSON-LDに "priceRange" を追加する
 -->
 <script type="application/ld+json">
 {
@@ -30,6 +25,8 @@
   "@id": "#clinic",
   "name": "井上鍼灸接骨院",
   "description": "京都市右京区・嵐山（JR嵯峨嵐山駅徒歩4分）の鍼灸接骨院。柔道整復師・鍼灸師の院長が、打撲・捻挫などのけがの施術と鍼灸を行う。健康保険取扱・予約不要。平成16年（2004年）開業。",
+  "telephone": "+81-75-873-2176",
+  "priceRange": "¥1,000〜¥4,000",
   "address": {
     "@type": "PostalAddress",
     "postalCode": "616-8374",
@@ -89,7 +86,7 @@
     {
       "@type": "Question",
       "name": "駐車場はありますか？",
-      "acceptedAnswer": {"@type": "Answer", "text": "専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅からすぐです。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅から徒歩6分です。"}
     },
     {
       "@type": "Question",
@@ -147,6 +144,30 @@ a { color: #1a6b54; }
   letter-spacing: 0.02em;
 }
 .header-tel .hours-note { font-size: 14px; color: #666; }
+
+/* ====== ファーストビュー（写真） ====== */
+.hero {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(26,71,52,0.25) 0%, rgba(26,71,52,0.75) 100%);
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+.hero-content { color: #fff; padding: 40px 0; }
+.hero-catch {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.hero-sub {
+  font-size: 18px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
 
 /* ====== 目次ボタン ====== */
 .quick-nav { background: #f2f7f5; padding: 20px 0; }
@@ -311,15 +332,11 @@ section { padding: 56px 0; }
   gap: 14px;
 }
 .photo-grid figure { margin: 0; }
-.photo-grid .ph {
-  background: #e4ece8;
-  border-radius: 8px;
+.photo-grid img {
+  width: 100%;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6a8377;
-  font-size: 16px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .photo-grid figcaption { text-align: center; font-size: 17px; margin-top: 6px; }
 
@@ -409,6 +426,9 @@ section { padding: 56px 0; }
   .hours-table .open, .hours-table .closed { font-size: 17px; }
   .treat-grid { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: 1fr; }
+  .hero-overlay { min-height: 220px; }
+  .hero-catch { font-size: 22px; }
+  .hero-sub { font-size: 16px; }
   .doctor .photo { width: 100%; }
   .call-banner a { font-size: 34px; }
   .map-wrap iframe { height: 320px; }
@@ -430,11 +450,21 @@ section { padding: 56px 0; }
     </div>
     <div class="header-tel">
       <div class="label">お問い合わせ</div>
-      <a>075-XXX-XXXX</a>
+      <a href="tel:075-873-2176">075-873-2176</a>
       <div class="hours-note">お電話は受付時間内にお願いします</div>
     </div>
   </div>
 </header>
+
+<!-- ファーストビュー：院内写真 -->
+<div class="hero">
+  <div class="hero-overlay">
+    <div class="container hero-content">
+      <p class="hero-catch">平成16年開業<br>地域に根づく、嵐山・嵯峨の鍼灸接骨院</p>
+      <p class="hero-sub">肩こり・腰痛・けがの施術から鍼灸まで。健康保険取扱・予約不要でお越しいただけます。</p>
+    </div>
+  </div>
+</div>
 
 <!-- 目次（知りたい情報へすぐ飛べる） -->
 <nav class="quick-nav" aria-label="ページ内メニュー">
@@ -454,7 +484,7 @@ section { padding: 56px 0; }
 <div class="lead-intro">
   <div class="container">
     <p>
-      井上鍼灸接骨院は、京都市右京区・嵐山エリア（JR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅すぐ）にある鍼灸接骨院です。
+      井上鍼灸接骨院は、京都市右京区・嵐山エリア（JR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅から徒歩6分）にある鍼灸接骨院です。
       平成16年（2004年）の開業以来、柔道整復師・鍼灸師の院長が、打撲・捻挫などのけがの施術や鍼灸を行っています。
       健康保険取扱（急性のけが）・予約不要です。
     </p>
@@ -611,16 +641,20 @@ section { padding: 56px 0; }
     <table class="simple-table">
       <tbody>
         <tr>
+          <th scope="row">特別手技</th>
+          <td>4,000円〜</td>
+        </tr>
+        <tr>
+          <th scope="row">鍼灸治療</th>
+          <td>2,500円〜</td>
+        </tr>
+        <tr>
+          <th scope="row">枡温灸</th>
+          <td>1,000円</td>
+        </tr>
+        <tr>
           <th scope="row">健康保険を使った施術<br>（打撲・捻挫・挫傷など）</th>
-          <td>保険の種類・負担割合・症状により異なります。<br>受付にてお気軽にお尋ねください。</td>
-        </tr>
-        <tr>
-          <th scope="row">鍼灸施術</th>
-          <td>〇〇〇〇円（ここに料金が入ります）</td>
-        </tr>
-        <tr>
-          <th scope="row">保険外の施術</th>
-          <td>〇〇〇〇円（ここに料金が入ります）</td>
+          <td>ご負担は1割〜3割です。<br>保険証の種類・年齢により異なりますので、受付にてお気軽にお尋ねください。</td>
         </tr>
       </tbody>
     </table>
@@ -666,16 +700,16 @@ section { padding: 56px 0; }
     <h2 class="section-title">院内のご紹介</h2>
     <div class="photo-grid">
       <figure>
-        <div class="ph">外観の写真が入ります</div>
-        <figcaption>外観</figcaption>
-      </figure>
-      <figure>
-        <div class="ph">待合室の写真が入ります</div>
-        <figcaption>待合室</figcaption>
-      </figure>
-      <figure>
-        <div class="ph">施術室の写真が入ります</div>
+        <img src="images/photo-treatment.jpg" alt="施術ベッドが並ぶ施術室" width="700" height="200">
         <figcaption>施術室</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-reception.jpg" alt="受付カウンターと施術室" width="700" height="200">
+        <figcaption>受付</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-waiting.jpg" alt="待合室のソファとマッサージチェア" width="700" height="200">
+        <figcaption>待合室</figcaption>
       </figure>
     </div>
   </div>
@@ -693,7 +727,7 @@ section { padding: 56px 0; }
         </tr>
         <tr>
           <th scope="row">電車でお越しの方</th>
-          <td>JR「嵯峨嵐山駅」より徒歩4分<br>嵐電「嵯峨駅」よりすぐ</td>
+          <td>JR「嵯峨嵐山駅」より徒歩4分<br>嵐電「嵯峨駅」より徒歩6分</td>
         </tr>
         <tr>
           <th scope="row">お車でお越しの方</th>
@@ -701,7 +735,7 @@ section { padding: 56px 0; }
         </tr>
         <tr>
           <th scope="row">電話番号</th>
-          <td>075-XXX-XXXX</td>
+          <td><a href="tel:075-873-2176">075-873-2176</a></td>
         </tr>
       </tbody>
     </table>
@@ -731,7 +765,7 @@ section { padding: 56px 0; }
     </div>
     <div class="faq-item">
       <h3>駐車場はありますか？</h3>
-      <p>専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅からすぐです。</p>
+      <p>専用駐車場はありません。お車の方は近隣のコインパーキングをご利用ください。電車の場合はJR嵯峨嵐山駅から徒歩4分、嵐電嵯峨駅から徒歩6分です。</p>
     </div>
     <div class="faq-item">
       <h3>初めて行くときは何を持っていけばよいですか？</h3>
@@ -749,7 +783,7 @@ section { padding: 56px 0; }
 <!-- 電話案内 -->
 <div class="call-banner">
   <p class="lead">ご不明な点は、お気軽にお電話ください</p>
-  <a>075-XXX-XXXX</a>
+  <a href="tel:075-873-2176">075-873-2176</a>
   <p class="note">受付時間：8:30〜12:00／15:00〜18:30（水・土・祝は午前のみ／日曜はお休み）</p>
 </div>
 
@@ -759,7 +793,7 @@ section { padding: 56px 0; }
     <strong style="font-size:20px;">井上鍼灸接骨院</strong><br>
     院長：井上 章（柔道整復師・鍼灸師）<br>
     〒616-8374 京都府京都市右京区嵯峨天龍寺若宮町31-4<br>
-    JR嵯峨嵐山駅 徒歩4分／嵐電嵯峨駅すぐ
+    JR嵯峨嵐山駅 徒歩4分／嵐電嵯峨駅 徒歩6分
     <p class="disclaimer">
       ※施術の効果には個人差があります。※健康保険の適用には条件があります。詳しくは受付にてお尋ねください。
     </p>
@@ -769,7 +803,7 @@ section { padding: 56px 0; }
 
 <!-- スマホ用 固定電話ボタン -->
 <div class="fixed-call">
-  <a><span aria-hidden="true">📞</span> 電話をかける：075-XXX-XXXX</a>
+  <a href="tel:075-873-2176"><span aria-hidden="true">📞</span> 電話をかける：075-873-2176</a>
 </div>
 
 </body>
