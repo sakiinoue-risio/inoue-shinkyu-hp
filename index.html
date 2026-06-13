@@ -290,6 +290,14 @@ section { padding: 56px 0; }
   text-align: left;
 }
 .simple-table th { background: #eef4f1; white-space: nowrap; width: 36%; }
+.simple-table th.price-group {
+  background: #1a6b54;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  white-space: normal;
+  width: auto;
+}
 .table-note { font-size: 16px; color: #666; margin-top: 12px; }
 
 /* ====== 施術内容 ====== */
@@ -641,6 +649,13 @@ section { padding: 56px 0; }
     <table class="simple-table">
       <tbody>
         <tr>
+          <th scope="row">健康保険を使った施術<br>（打撲・捻挫・挫傷など）</th>
+          <td>ご負担は1割〜3割です。<br>保険証の種類・年齢により異なりますので、受付にてお気軽にお尋ねください。</td>
+        </tr>
+        <tr>
+          <th colspan="2" scope="colgroup" class="price-group">保険外治療</th>
+        </tr>
+        <tr>
           <th scope="row">特別手技</th>
           <td>4,000円〜</td>
         </tr>
@@ -651,10 +666,6 @@ section { padding: 56px 0; }
         <tr>
           <th scope="row">枡温灸</th>
           <td>1,000円</td>
-        </tr>
-        <tr>
-          <th scope="row">健康保険を使った施術<br>（打撲・捻挫・挫傷など）</th>
-          <td>ご負担は1割〜3割です。<br>保険証の種類・年齢により異なりますので、受付にてお気軽にお尋ねください。</td>
         </tr>
       </tbody>
     </table>
