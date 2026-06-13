@@ -5,24 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>井上鍼灸接骨院｜嵐山・嵯峨の接骨院・鍼灸院（嵯峨嵐山駅徒歩4分）</title>
 <meta name="description" content="京都市右京区・嵐山の井上鍼灸接骨院。JR嵯峨嵐山駅徒歩4分・嵐電嵯峨駅徒歩6分。肩こり・腰痛・捻挫・打撲の施術、鍼灸に対応。健康保険取扱・予約不要。平成16年開業、地域のかかりつけ接骨院です。">
+<link rel="canonical" href="https://inoue-shinkyu-hp.vercel.app/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="井上鍼灸接骨院">
+<meta property="og:url" content="https://inoue-shinkyu-hp.vercel.app/">
+<meta property="og:title" content="井上鍼灸接骨院｜嵐山・嵯峨の接骨院・鍼灸院（嵯峨嵐山駅徒歩4分）">
+<meta property="og:description" content="京都市右京区・嵐山の井上鍼灸接骨院。JR嵯峨嵐山駅徒歩4分・嵐電嵯峨駅徒歩6分。肩こり・腰痛・捻挫・打撲の施術、鍼灸に対応。健康保険取扱・予約不要。平成16年開業、地域のかかりつけ接骨院です。">
+<meta property="og:image" content="https://inoue-shinkyu-hp.vercel.app/images/photo-treatment.jpg">
 <!--
 ■ 公開前チェックリスト（必ず対応）
 1. お知らせの仮文面を実際の内容に差し替え
 2. 院長写真を差し替え（imgタグには alt を必ず付ける）。院内写真3枚（施術室・受付・待合室）は反映済み
 3. 「混みやすい時間帯の目安」を院長に確認して記入
-4. 公開URL確定後：OGP（og:title / og:image）・canonical・favicon を追加し、
-   下のJSON-LD（3ブロック）に "url" と "image" を追加する
-   ※imageはLocalBusinessリッチリザルトの必須項目。@idも "#clinic" → "https://ドメイン/#clinic" に絶対化する
-5. geo座標（35.019048, 135.679652）は地図埋め込みURL由来の暫定値。
+4. geo座標（35.019048, 135.679652）は地図埋め込みURL由来の暫定値。
    Googleマップで自院ピンを右クリックして正確な座標を確認し、差し替える
-6. Googleビジネスプロフィール（GBP）のオーナー確認を行い、
+5. Googleビジネスプロフィール（GBP）のオーナー確認を行い、
    院名・住所・電話（NAP）をGBP・本ページ・JSON-LDで完全一致させる（ハイフン位置含む）
+
+公開URL：https://inoue-shinkyu-hp.vercel.app/（OGP・canonical・favicon・JSON-LDのurl/imageは設定済み）
 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  "@id": "#clinic",
+  "@id": "https://inoue-shinkyu-hp.vercel.app/#clinic",
+  "url": "https://inoue-shinkyu-hp.vercel.app/",
+  "image": [
+    "https://inoue-shinkyu-hp.vercel.app/images/photo-treatment.jpg",
+    "https://inoue-shinkyu-hp.vercel.app/images/photo-reception.jpg",
+    "https://inoue-shinkyu-hp.vercel.app/images/photo-waiting.jpg"
+  ],
   "name": "井上鍼灸接骨院",
   "description": "京都市右京区・嵐山（JR嵯峨嵐山駅徒歩4分）の鍼灸接骨院。柔道整復師・鍼灸師の院長が、打撲・捻挫などのけがの施術と鍼灸を行う。健康保険取扱・予約不要。平成16年（2004年）開業。",
   "telephone": "+81-75-873-2176",
@@ -42,7 +57,7 @@
   "hasMap": "https://maps.app.goo.gl/vi7sVXjbBT7Uru9N6",
   "areaServed": ["京都市右京区", "嵯峨", "嵐山"],
   "foundingDate": "2004",
-  "founder": {"@id": "#director"},
+  "founder": {"@id": "https://inoue-shinkyu-hp.vercel.app/#director"},
   "knowsAbout": ["鍼灸", "柔道整復", "接骨", "手技療法", "電気療法"],
   "openingHoursSpecification": [
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "08:30", "closes": "12:00"},
@@ -56,10 +71,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "#director",
+  "@id": "https://inoue-shinkyu-hp.vercel.app/#director",
   "name": "井上 章",
   "jobTitle": "院長",
-  "worksFor": {"@id": "#clinic"},
+  "worksFor": {"@id": "https://inoue-shinkyu-hp.vercel.app/#clinic"},
   "hasCredential": [
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "国家資格", "name": "柔道整復師（1985年取得）", "recognizedBy": {"@type": "GovernmentOrganization", "name": "厚生労働省"}},
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "国家資格", "name": "鍼灸師（はり師・きゅう師）", "recognizedBy": {"@type": "GovernmentOrganization", "name": "厚生労働省"}}
@@ -71,7 +86,7 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "about": {"@id": "#clinic"},
+  "about": {"@id": "https://inoue-shinkyu-hp.vercel.app/#clinic"},
   "mainEntity": [
     {
       "@type": "Question",
